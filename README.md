@@ -1,16 +1,28 @@
+# Pulumi Challenge
 
+## Task List
 
-### Task List
+- [ ] Create Bucked
+- [ ] Create DB
+- [ ] Create cloud function
+  - [ ] Subscribe it to file upload
+- [ ] Publish to Database
+- [ ] Make into components
 
-- [ ] Write python flask app
-- [ ] Docker container
-
-### Commands to Remember
+## Helpful Commands
 
 ```shell
-docker build --platform linux/amd64 -t pulumi_challenge:test -f Dockerfile .
+pulumi up
+
+pulumi destroy
+
+pulumi logs -f
 ```
 
-```shell
-docker run -d -p 3000:5000 pulumi_challenge:test
-```
+## Notes
+
+https://www.pulumi.com/ai/answers/mDL94pgfiaAEsUkst4MQUK/triggering-aws-lambda-from-s3-upload-events
+
+https://www.pulumi.com/registry/packages/aws/api-docs/s3/bucketnotification/#add-notification-configuration-to-lambda-function
+
+https://www.pulumi.com/ai/answers/2NZcTf2PuNY4YzML7ho6QP/creating-aws-lambda-functions-with-python
